@@ -230,7 +230,7 @@ Besides general errors handling, provided by SpringBoot, service will return err
   <tr>
     <td>
       <ul>
-      <li>when trying to change job application status to the value, not supported by application workflow</li>
+      <li>when trying to change job application status to the value, which is not supported by application workflow</li>
       </ul>
     </td>
   </tr>
@@ -240,7 +240,7 @@ Besides general errors handling, provided by SpringBoot, service will return err
   <tr>
     <td>
       <ul>
-      <li>when specified job offer or application is not exists</li>
+      <li>when specified job offer or application not exists</li>
       </ul>
     </td>
   </tr>
