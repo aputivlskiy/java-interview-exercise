@@ -1,0 +1,199 @@
+{
+  "info": {
+    "name": "HeavenHR",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get job offer",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json; charset=utf-8"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/jobs/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs",
+            "1"
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "List all job offers",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json; charset=utf-8"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/jobs",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs"
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Create new job offer",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json; charset=utf-8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"jobTitle\":\"Software developer\",\n\t\"startDate\":\"25.02.2018\"\n}"
+        },
+        "url": {
+          "raw": "localhost:8080/jobs",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs"
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Create new job application",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json; charset=utf-8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"email\":\"some@email.com\",\n\t\"resume\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur posuere luctus. In faucibus gravida tortor, vitae malesuada lacus porta mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce vestibulum nisl ligula. Cras in enim volutpat, volutpat nunc non, finibus eros. Vestibulum leo nunc, molestie a diam non, condimentum laoreet dui. In tristique tellus et accumsan facilisis. Nullam maximus elit dui, sed cursus nisi hendrerit quis.\"\n}"
+        },
+        "url": {
+          "raw": "localhost:8080/jobs/1/applications",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs",
+            "1",
+            "applications"
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "List applications for the job",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json; charset=utf-8"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/jobs/1/applications",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs",
+            "1",
+            "applications"
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Get job application",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json; charset=utf-8"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/jobs/1/applications/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs",
+            "1",
+            "applications",
+            "2"
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Change application status",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json; charset=utf-8"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"status\":\"INVITED\"\n}"
+        },
+        "url": {
+          "raw": "localhost:8080/jobs/1/applications/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs",
+            "1",
+            "applications",
+            "1"
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
